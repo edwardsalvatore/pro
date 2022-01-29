@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="full.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="aa.png">
+    <title>Project</title>
+</head>
+
+
+</head>
+
+<body>
+    <div style="justify-content: center;"> <img src="aa.png" style="display:inline;width: 40px;height: 40px;float: left; justify-content: center;">
+        <a>
+            <h1 style="color: rgb(0, 0, 0);letter-spacing: 40px;">Myntra Shoping </h1>
+
+        </a>
+
+    </div>
+    <ul style="border: 3px solid rgb(255, 255, 255);border-radius: 10px;">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="women.html">Mens</a></li>
+        <li><a href="men.html">Womens</a></li>
+        <li><a href="kids.html">Kids</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+    <section class="image-container">
+        <p style="position:absolute;font-size: 90px;padding-top: 15%;text-shadow: 2px 2px rgb(150, 150, 150); color: rgb(248, 191, 191);float: right;">Indias Biggest Online Shopping Store
+        </p>
+        <img class="mySlides" src="000.jpg" style="width:100%" height="100%">
+        <img class="mySlides" src="0.jpg" style="width:100%" height="100%">
+        <img class="mySlides" src="00.jpg" style="width:100%" height="0%">
+
+    </section>
+
+    <script>
+        var myIndex = 0;
+        move();
+
+        function move() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(move, 3000);
+        }
+    </script>
+    <div style="background-image: url(bg.jpg);background-repeat: no-repeat; background-size: cover;">
+        <div class="thisone">
+
+
+
+            <div class="gallery">
+                <a target="_blank" href="men.html">
+                    <img src="wom.webp" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Mens Collection</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="women.html">
+                    <img src="me.webp" alt="Northern Lights" width="100" height="100">
+                </a>
+                <div class="desc">Women Collections</div>
+            </div>
+        </div>
+        <div>
+            <div class="g" id="j" style="padding-top: 100px;
+        margin: auto;
+        display: grid;">
+                <a target="_blank" href="kids.html">
+                    <img src="chi.webp" alt="Northern Lights" width="100" height="700">
+                </a>
+                <div class="desc" style="margin-top:-20%;">Kids Collections</div>
+            </div>
+        </div>
+        <br>
+
+
+        <footer>
+            <div class="top_header">
+
+                <h1>Thank You Vist Again</h1>
+            </div>
+            <span class="border-shape"></span>
+            <div class="bottom_content">
+
+                <section>
+                    <h4 style="display: flex;">You can conncet to us on SocailMedia Platfroms</h4>
+                    <br>
+                    <a href="https://www.instagram.com/jawaad_ash/?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+                    <a href="jawaad1304@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="#"><i class="fa fa-telegram"></i></a>
+                </section>
+            </div>
+
+        </footer>
+
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
